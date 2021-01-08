@@ -1,0 +1,13 @@
+@import "./theme.scss";
+@use "sass:map";
+
+.main {
+  overflow: auto;
+  color: white;
+  background-color: map-get($theme-colors, "background-2");
+  position: fixed;
+  top: 28px;
+  height: calc(100vh - 28px);
+  width: calc(100vw - 64px);
+  margin-left: 64px;
+}

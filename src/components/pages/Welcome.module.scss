@@ -1,0 +1,20 @@
+@import "../../theme.scss";
+@use "sass:map";
+
+.wrapper {
+  color: white;
+  background-color: map-get($theme-colors, "background");
+  position: fixed;
+  top: 28px;
+  height: calc(100vh - 28px);
+  width: calc(100vw);
+}
+
+.button {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.grid {
+  height: 100%;
+}

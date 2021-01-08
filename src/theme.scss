@@ -1,0 +1,33 @@
+@use "sass:map";
+
+$theme-colors: (
+  "shadow": #0a1015,
+  "background": #0d161c,
+  "background-2": #141f2b,
+  "highlight": #00adb5,
+  "highlight-2": #eeeeee,
+);
+
+body {
+  overflow: hidden;
+  color: map-get($theme-colors, "highlight-2");
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  margin: 0;
+  background-color: map-get($theme-colors, "shadow");
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently*/
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: map-get($theme-colors, "background");
+}
